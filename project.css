@@ -1,0 +1,429 @@
+.poppins-light {
+    font-family: "Edu AU VIC WA NT Pre", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Edu AU VIC WA NT Pre", serif;
+  }
+  
+  .main {
+    height: 100vh;
+    background-image: url('camera.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0;
+  }
+  #text{
+    /* color: white; */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to top, rgb(183, 22, 22), rgb(255, 0, 0));
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                letter-spacing: 5px;
+                text-shadow: 0 0 20px rgb(242, 69, 69);
+  }
+  .btn1 .fa-bars {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 800;
+    position: absolute;
+    left: 16px;
+    line-height: 42px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+  
+   .fa-xmark{
+    color: grey;
+  }
+
+  .sidebar_menu{
+    height: 100vh;
+    width: 300px;
+    /* background-color: rgba(255, 255, 255, 0.567); */
+    /* box-shadow: 0 0 10px white ; */
+    position: fixed;
+    left: -310px;
+    border-radius: 6px;
+    transition: all 0.3s linear;
+  }
+
+  .sidebar_menu .logo{
+    position: absolute;
+    width: 100%;
+    line-height: 40px;
+    /* box-shadow: 0 2px 5px rgba(255, 255, 255, 0.567); */
+    border-radius: 6px;
+    height: 60px;
+    
+    filter: drop-shadow(0 6px 7px rgba(255,255,255,0.8));
+  }
+
+  .sidebar_menu .logo a{
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+    position: absolute;
+    left: 50px;
+  }
+
+
+  .sidebar_menu .menu{
+    position: absolute;
+    width: 100%;
+    top: 80px;
+  }
+
+  .btn2 .fa-xmark {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    left: 280px;
+    /* opacity: 0; */
+    line-height: 40px;
+    cursor: pointer;
+  }
+
+  .sidebar_menu .menu li{
+    margin-top: 6px;
+    padding: 15px 20px;
+    list-style-type: none;
+  }
+
+  .sidebar_menu .menu i,a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .sidebar_menu .menu i{
+    padding-right: 30px;
+  }
+
+  .sidebar_menu .social_media{
+   
+    position: absolute;
+    left: 25%;
+    bottom: 53px;
+    margin-left: -58px;
+  }
+
+
+  .sidebar_menu .social_media i{
+    color: white;
+    opacity: 0.7;
+    padding: 10px;
+  }
+
+  #check{
+    display: none;
+  }
+
+  ul{
+    margin-left: -30px;
+  }
+
+
+  .btn1  :hover{
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .btn2 .fa-xmark:hover{
+    font-size: 30px;
+    transition: all 0.3s linear
+  }
+
+  .sidebar_menu .social_media i:hover{
+    transform: scale(1.5);
+    opacity: 1;
+    color: blue;
+  }
+
+
+  #check:checked ~ .sidebar_menu{
+    left: 0;
+    transition: all 1.2s ease-in;
+
+  }
+
+  #check:checked ~ .btn1{
+    opacity: 0;
+  }
+
+
+.info{
+    height: 100vh;
+    margin: 0;
+    margin-top: -40px;
+    padding: 0;
+    background-color: black;
+    font-family: "poppins",sans-serif;
+    color: white;
+}
+.heading{
+    font-size: 2em;
+    color: aquamarine;
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: blue; */
+    width: 60%;
+    height: 80%;
+    gap: 2px;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.cards .card1{
+    height: 240px;
+    width: 300px;
+    /* background-color: red; */
+    margin-top: 20px;
+    background-image: url('boy.jpg');
+    background-size: cover; /* Image ko div ke size ke hisaab se adjust karega */
+    background-position: center; /* Image ko center align karega */
+    background-repeat: no-repeat; /* Image ko repeat hone se roke */
+}
+
+.cards .card2{
+    height: 240px;
+    width: 300px;
+    /* background-color: red; */
+    margin-top: 20px;
+    background-image: url('dog.jpg');
+    background-size: cover; /* Image ko div ke size ke hisaab se adjust karega */
+    background-position: center; /* Image ko center align karega */
+    background-repeat: no-repeat; /* Image ko repeat hone se roke */
+}
+
+.cards .card3{
+    height: 240px;
+    width: 300px;
+    /* background-color: red; */
+    margin-top: 20px;
+    background-image: url('cat.jpg');
+    background-size: cover; /* Image ko div ke size ke hisaab se adjust karega */
+    background-position: center; /* Image ko center align karega */
+    background-repeat: no-repeat; /* Image ko repeat hone se roke */
+}
+
+.cards .card4{
+    height: 240px;
+    width: 300px;
+    /* background-color: red; */
+    margin-top: 20px;
+    background-image: url('uncle.jpg');
+    background-size: cover; /* Image ko div ke size ke hisaab se adjust karega */
+    background-position: center; /* Image ko center align karega */
+    background-repeat: no-repeat; /* Image ko repeat hone se roke */
+}
+
+.cards .card5{
+    height: 240px;
+    width: 300px;
+    /* background-color: red; */
+    margin-top: 20px;
+    background-image: url('hills.jpg');
+    background-size: cover; /* Image ko div ke size ke hisaab se adjust karega */
+    background-position: center; /* Image ko center align karega */
+    background-repeat: no-repeat; /* Image ko repeat hone se roke */
+    
+}
+
+.cards .card6{
+    height: 240px;
+    width: 300px;
+    /* background-color: red; */
+    margin-top: 20px;
+    background-image: url('god.jpg');
+    background-size: cover; /* Image ko div ke size ke hisaab se adjust karega */
+    background-position: center; /* Image ko center align karega */
+    background-repeat: no-repeat; /* Image ko repeat hone se roke */
+}
+
+.work{
+    
+        height: 100vh;
+        margin: 0;
+        margin-top: -40px;
+        padding: 0;
+        background-color: black;
+        font-family: "poppins",sans-serif;
+        color: white;
+}
+
+.workContainer{
+    height: 320px;
+    /* background-color: brown; */
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.category{
+    height: 250px;
+    width: 300px;
+    /* background-color: red; */
+    margin-top: 20px;
+    background-image: url('boy.jpg');
+    background-size: cover; /* Image ko div ke size ke hisaab se adjust karega */
+    background-position: center; /* Image ko center align karega */
+    background-repeat: no-repeat; /* Image ko repeat hone se roke */
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.desc{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-bottom: -70px;
+    text-align: center;
+    color: rgb(50, 50, 202);
+    font-size: 1.2em;
+}
+
+.category1{
+    height: 250px;
+    width: 300px;
+    /* background-color: red; */
+    margin-top: 20px;
+    background-image: url('photoshoot.jpg');
+    background-size: cover; /* Image ko div ke size ke hisaab se adjust karega */
+    background-position: center; /* Image ko center align karega */
+    background-repeat: no-repeat; /* Image ko repeat hone se roke */
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.category2{
+    height: 250px;
+    width: 300px;
+    /* background-color: red; */
+    margin-top: 20px;
+    /* background-image: url('photoshoot.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;  */
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.contactHeading{
+    text-align: center;
+    color: rgb(33, 233, 146);
+    font-size: 3em;
+}
+.locations{
+    display: flex;
+    flex-direction: row;
+}
+
+.locations ul{
+    list-style-type: none;
+    display: flex;
+
+}
+
+.locations ul li{
+    margin: 20px;
+    font-size: 2em;
+    background:  linear-gradient(135deg, #9795F0 10%, #FBC8D4 100%);
+    -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                font-weight: 700;
+
+}
+
+.contact{
+    height: 100vh;
+    background-image: url('last.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0;
+    margin-top: -40px;
+    color: white;
+    font-family: "poppins",sans-serif;
+}
+
+.conHeading{
+    height: 20%;
+    margin-top: 15px;
+    font-size: 2em;
+   color: rgba(21, 194, 233, 0.89);
+    display: inline-block;
+}
+    
+.email i{
+    
+    font-size: 2rem;
+     margin-left: 2rem;
+     margin-top: 2rem;
+     color: rgb(246, 90, 90);
+    
+}
+
+.email>span{
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.mobile i{
+    font-size: 2rem;
+     margin-left: 2rem;
+     margin-top: 2rem;
+     color: rgb(40, 18, 234);
+}
+
+.mobile>span{
+    font-size: 2rem;
+    padding: 15px;
+}
+
+
+.fa-facebook{
+    color: blue;
+    
+}
+
+.fa-youtube{
+    color: red;
+}
+
+.fa-instagram{
+    color: rgb(71, 86, 159);
+}
+
+.social_media_icons>ul>a>i{
+   font-size: 36px;
+margin: 40px 20px;
+    
+}
+
+.social_media_icons{
+    margin-top: 55px;
+}
